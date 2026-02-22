@@ -126,6 +126,7 @@ img {
   cursor: pointer;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
   transition: var(--transition);
+  text-wrap:nowrap;
 }
 
 .cta-btn:hover {
@@ -444,6 +445,7 @@ img {
   .cta-btn {
     padding: 8px 15px;
     font-size: 14px;
+    text-wrap:nowrap;
   }
 
   .theme-switch {
@@ -464,6 +466,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
