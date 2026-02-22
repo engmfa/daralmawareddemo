@@ -78,6 +78,7 @@ img {
 .nav-list {
   display: flex;
   gap: 25px;
+  text-wrap:nowrap;
 }
 
 .nav-list a {
@@ -466,6 +467,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
