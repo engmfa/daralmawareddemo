@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --primary-text-color: #2f3840;
+  --secondary-text-color: #fff;
+  --bg-color: #080f20;
+  --bg-color2: #017c70;
+  --bg-heading-color: #0f172a;
+  --unique-text-color: #61ce70;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  color: var(--primary-text-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo img {
+  width: 150px;
+}
+a:hover,
+a:active,
+a:focus {
+  color: var(--unique-text-color);
+}
+/* ===== Header Base ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-heading-color);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+/* ===== Logo ===== */
+.logo img {
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Navigation ===== */
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-list a {
+  position: relative;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--unique-text-color);
+  transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--unique-text-color);
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+/* ===== CTA Button ===== */
+.cta-btn {
+  background-color: var(--bg-color2);
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+.cta-btn:hover {
+  /* transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(244, 180, 0, 0.4); */
+  background-color: transparent;
+  color: var(--unique-text-color);
+  border: 1px solid var(--unique-text-color);
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 18px;
+  color: var(--secondary-text-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: var(--unique-text-color);
+  transform: translateY(-3px);
+  scale: 1.1;
+}
+
+/* ===== Start Dark Mode Switch ===== */
+.theme-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  top: 10px;
+  display: inline-block;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+/* الكرة المتحركة */
+.toggle-icon {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* الأيقونات فوق بعض */
+.toggle-icon i {
+  position: absolute;
+  font-size: 12px;
+  transition: opacity 0.3s ease;
+}
+
+/* الشمس ظاهرة افتراضيًا */
+.toggle-icon .fa-sun {
+  color: #f4b400;
+  opacity: 1;
+}
+
+/* القمر مخفي */
+.toggle-icon .fa-moon {
+  color: #fff;
+  opacity: 0;
+}
+
+/* عند التفعيل (الوضع الليلي) */
+.theme-switch input:checked + .slider {
+  background: var(--bg-color2);
+}
+
+/* تحريك الكرة لليسار */
+.theme-switch input:checked + .slider .toggle-icon {
+  transform: translateX(-30px);
+  background: #1c2b4a;
+}
+
+/* تبديل الأيقونات بسلاسة */
+.theme-switch input:checked + .slider .fa-sun {
+  opacity: 0;
+}
+
+.theme-switch input:checked + .slider .fa-moon {
+  opacity: 1;
+}
+/* ===== END Dark Mode Switch ===== */
+
+/* ===== Mobile ===== */
+.nav-toggle {
+  display: none;
+  font-size: 22px;
+  background: transparent;
+  border: 1px soli var(--unique-text-color);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    float: left;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-color);
+    width: 100%;
+    display: none;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header-actions {
+    display: inline-block;
+  }
+}
