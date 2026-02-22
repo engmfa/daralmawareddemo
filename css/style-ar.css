@@ -365,7 +365,8 @@ img {
   height: 100%;
 }
 
-.card:hover {
+.cards-grid:has(.card:hover) .card:not(:hover) {
+  opacity: 0.5; 
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 10px 25px rgba(1, 124, 112, 0.2);
 }
@@ -467,6 +468,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
