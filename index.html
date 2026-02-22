@@ -3,44 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>شركة دار الموارد للتجارة-ريادة في كفاءة الطاقة والتحكم البيئي</title>
+    <title>دار الموارد للتجارة - حلول الطاقة والتحكم البيئي</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style-ar.css" />
+	<link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style-ar.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <!-- company logo-->
-        <a href="" class="logo"
-          ><img
+        <a href="index.html" class="logo">
+          <img
             src="img/Daralmawared-Logo.webp"
-            alt=" شعار شركة دار الموارد للتجارة"
+            alt="شعار دار الموارد للتجارة"
             loading="lazy"
-        /></a>
-        <!--main Navigation Bar-->
+          />
+        </a>
+
         <nav class="main-nav" aria-label="القائمة الرئيسية">
           <i class="fa-solid fa-bars nav-toggle"></i>
           <ul class="nav-list">
-            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
             <li><a href="about.html">من نحن</a></li>
             <li><a href="#products">المنتجات</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="#services">خدماتنا</a></li>
             <li><a href="contact.html">اتصل بنا</a></li>
           </ul>
         </nav>
-        <div class="free-consultation">
-          <button class="cta-btn">استشارتك مجانية</button>
-        </div>
+
+        <button class="cta-btn">استشارتك مجانية</button>
+
         <div class="dark-mode">
           <label class="theme-switch">
-            <input type="checkbox" aria-label="تفعيل الوضع الليلي" />
+            <input type="checkbox" aria-label="الوضع الليلي" />
             <span class="slider">
               <span class="toggle-icon">
                 <i class="fa-solid fa-sun"></i>
@@ -49,187 +46,165 @@
             </span>
           </label>
         </div>
+
         <div class="social-icons">
-          <a href="#" aria-label="Facebook">
-            <i class="fa-brands fa-facebook"> </i>
-          </a>
-          <a href="#" aria-label="Twitter">
-            <i class="fa-brands fa-twitter"> </i>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"> </i>
-          </a>
-          <a href="#" aria-label="LinkedIn"
+          <a href="#" aria-label="فيسبوك"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" aria-label="تويتر"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" aria-label="انستغرام"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="لينكد إن"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="#" aria-label="YouTube">
-            <i class="fa-brands fa-youtube"> </i>
-          </a>
+          <a href="#" aria-label="يوتيوب"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </div>
       </div>
     </header>
-    <!--Start Hero section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-info">
-          <h1 class="hero-tite">شــركة دار الـــموارد للــتجــارة</h1>
-          <h2>
-            حلول التكيف والتهوية - الأنظمة الميكانيكية <br />- الأنظمة
-            الكهربائية - الأنظمة الصحية
-          </h2>
-          <p>
-            في دار الموارد، نقدم مجموعة شاملة من حلول التكييف والتهوية
-            والميكانيكا والكهرباء والسباكة المتكاملة، المصممة خصيصًا لتلبية
-            متطلبات المناخ والسلامة في المملكة، مع تعزيز بيئات صحية وممارسات
-            مستدامة وصديقة للبيئة.
-          </p>
-          <div class="hero-product-btn">
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">دار الموارد للتجارة</h1>
+            <h2>
+              حلول التكيف والتهوية | الأنظمة الميكانيكية والكهربائية والصحية
+            </h2>
+            <p>
+              نقدم مجموعة شاملة من حلول التكييف والتهوية والميكانيكا والكهرباء
+              والسباكة المتكاملة، المصممة خصيصًا لتلبية متطلبات المناخ والسلامة
+              في المملكة.
+            </p>
             <button class="product-btn">استكشف منتجاتنا</button>
           </div>
-        </div>
 
-        <div class="hero-video">
-          <video autoplay muted loop playsinline>
-            <source src="img/background-vedio.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </section>
-    <!--End Hero Section -->
-    <!--Start Products Section -->
-    <div class="products" id="products">
-      <div class="container">
-        <h2 class="section-title">مجموعة منتجاتنا</h2>
-        <p class="section-desc">
-          نُقدّم منتجات عالية الأداء لأنظمة التكييف والتهوية والميكانيكية
-          والكهربائية والصحية، تُحسّن تدفق الهواء والسلامة وكفاءة الطاقة في
-          المباني الحديثة. تدعم حلولنا توزيعًا موثوقًا للهواء، ومكافحة الحرائق
-          والدخان، وإدارة دقيقة لأنظمة التدفئة والتبريد والطاقة.
-        </p>
-        <div class="all-services">
-          <div class="service">
-            <img
-              src="img/Products/air-diffusion.webp"
-              alt="air-diffusion"
-              loading="lazy"
-            />
-            <h3>توزيع الهواء والتحكم فيه</h3>
-            <p>
-              حلول لتنظيم وموازنة وتوجيه تدفق الهواء للحفاظ على الراحة المثلى
-              داخل المباني وأداء التهوية الأمثل. - وحدات VAV / CAV - منظمات
-              الهواء / مخمدات التحكم في الحجم - ستائر هوائية
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/Products/Smoke-control.webp"
-              alt="Smoke-control"
-              loading="lazy"
-            />
-            <h3>أنظمة السلامة من الحرائق والدخان</h3>
-            <p>
-              مكونات السلامة المصممة لمنع انتشار الحريق، والتحكم في حركة الدخان،
-              والحفاظ على ظروف إخلاء آمنة. - مخمدات الحريق - مخمدات الدخان -
-              وحدات الضغط
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/Products/Compact-air-handling-unit.webp"
-              alt="Compact-air-handling-unit"
-              loading="lazy"
-            />
-            <h3>معالجة الهواء والتحكم البيئي</h3>
-            <p>
-              معدات مصممة لتكييف الهواء الداخلي وترشيحه وإدارة جودته في البيئات
-              التجارية والصناعية والحساسة. - وحدات معالجة الهواء (AHU) - وحدات
-              التكييف السطحية (RTU) / الوحدات المدمجة - وحدة بيئية - وحدات BIBO
-              / وحدات تكييف الهواء الدقيقة (CRAC) / وحدات تنقية الهواء / وحدات
-              التحكم الدقيق
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/Products/separator-.webp"
-              alt="separator"
-              loading="lazy"
-            />
-            <h3>المكونات الهيدروليكية والميكانيكية</h3>
-            <p>
-              عناصر ميكانيكية أساسية تعمل على استقرار أنظمة المياه، وحماية
-              المعدات، وضمان كفاءة الأداء الهيدروليكي. - خزانات التمدد - فواصل
-              الهواء عن الأوساخ - صمامات التحكم المتكاملة بالضغط (PICVs)
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/Products/abqm40-co6_flexo_radiant.webp"
-              alt="abqm40-co6_flexo_radiant"
-              loading="lazy"
-            />
-            <h3>القياس ومراقبة الطاقة</h3>
-            <p>
-              أجهزة دقيقة لمراقبة التدفق والاستهلاك والطاقة الحرارية لدعم
-              الإدارة الفعالة للمباني. - عدادات المياه/التدفق - عدادات BTU /
-              الطاقة الحرارية
-            </p>
+          <div class="hero-media">
+            <video autoplay muted loop playsinline>
+              <source src="img/background-vedio.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-      </div>
-    </div>
-    <!--End Products Section -->
-    <!--Start Services Section -->
-    <div class="services">
-      <div class="container">
-        <h2 class="section-title">خدمات ما بعد البيع</h2>
-        <p class="section-desc">دعم هندسي متكامل لضمان استمرارية أعمالكم</p>
-        <div class="all-services">
-          <div class="service">
-            <img
-              src="img/services/screen-female-hands.webp"
-              alt="consutation-design"
-            />
-            <h3>الاستشارة والتصميم</h3>
-            <p>
-              نوفر استشارات هندسية متخصصة لضمان اختيار المنتج الأمثل وتصميم نظام
-              متكامل يتناسب مع احتياجاتكم الخاصة وظروف الموقع.
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/services/construction-worker.webp"
-              alt="construction-worker"
-            />
-            <h3>التركيب الاحترافي</h3>
-            <p>
-              يضمن فريق التركيب المعتمد لدينا الأداء الأمثل من خلال تركيب دقيق
-              ومنهجي، يلتزم بأعلى معايير الجودة والسلامة.
-            </p>
-          </div>
-          <div class="service">
-            <img src="img/services/Mainteanance.webp" alt="Mainteanance" />
-            <h3>عقود الصيانة الدورية</h3>
-            <p>
-              حافظ على كفاءة نظامك وتجنب الأعطال المفاجئة مع برامج الصيانة
-              الوقائية المخصصة المصممة لضمان أطول عمر تشغيلي ممكن.
-            </p>
-          </div>
-          <div class="service">
-            <img
-              src="img/services/businessman-talking-phone.webp"
-              alt="business-man"
-            />
-            <h3>الدعم الفني وخدمة الطوارئ</h3>
-            <p>
-              فريق الدعم الفني لدينا جاهز للرد على استفساراتكم على مدار الساعة.
-              كما نقدم خدمة طوارئ سريعة لحل الأعطال الحرجة.
-            </p>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <h2 class="section-title">منتجاتنا</h2>
+          <p class="section-desc">
+            نقدم منتجات عالية الأداء لأنظمة التكييف والتهوية والميكانيكية
+            والكهربائية والصحية
+          </p>
+
+          <div class="cards-grid">
+            <div class="card">
+              <img
+                src="img/Products/air-diffusion.webp"
+                alt="توزيع الهواء"
+                loading="lazy"
+              />
+              <h3>توزيع الهواء والتحكم فيه</h3>
+              <p>وحدات VAV/CAV، منظمات الهواء، مخمدات التحكم، ستائر هوائية</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/Products/Smoke-control.webp"
+                alt="السلامة من الحرائق"
+                loading="lazy"
+              />
+              <h3>أنظمة السلامة من الحرائق</h3>
+              <p>مخمدات الحريق، مخمدات الدخان، وحدات الضغط</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/Products/Compact-air-handling-unit.webp"
+                alt="معالجة الهواء"
+                loading="lazy"
+              />
+              <h3>معالجة الهواء والتحكم البيئي</h3>
+              <p>وحدات AHU، RTU، وحدات BIBO، CRAC، تنقية الهواء</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/Products/separator-.webp"
+                alt="مكونات هيدروليكية"
+                loading="lazy"
+              />
+              <h3>المكونات الهيدروليكية</h3>
+              <p>خزانات التمدد، فواصل الهواء، صمامات PICV</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/Products/abqm40-co6_flexo_radiant.webp"
+                alt="مراقبة الطاقة"
+                loading="lazy"
+              />
+              <h3>القياس ومراقبة الطاقة</h3>
+              <p>عدادات المياه/التدفق، عدادات BTU والطاقة الحرارية</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!--End Services Section -->
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">خدمات ما بعد البيع</h2>
+          <p class="section-desc">دعم هندسي متكامل لضمان استمرارية أعمالكم</p>
+
+          <div class="cards-grid">
+            <div class="card">
+              <img
+                src="img/services/screen-female-hands.webp"
+                alt="استشارات"
+                loading="lazy"
+              />
+              <h3>الاستشارة والتصميم</h3>
+              <p>
+                استشارات هندسية متخصصة لاختيار المنتج الأمثل وتصميم نظام متكامل
+              </p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/services/construction-worker.webp"
+                alt="تركيب"
+                loading="lazy"
+              />
+              <h3>التركيب الاحترافي</h3>
+              <p>تركيب دقيق ومنهجي بأعلى معايير الجودة والسلامة</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/services/Mainteanance.webp"
+                alt="صيانة"
+                loading="lazy"
+              />
+              <h3>عقود الصيانة الدورية</h3>
+              <p>برامج صيانة وقائية مخصصة لأطول عمر تشغيلي</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="img/services/businessman-talking-phone.webp"
+                alt="دعم فني"
+                loading="lazy"
+              />
+              <h3>الدعم الفني وخدمة الطوارئ</h3>
+              <p>دعم فني على مدار الساعة وخدمة طوارئ سريعة</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>
-
