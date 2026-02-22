@@ -389,7 +389,10 @@ img {
   line-height: 1.6;
   color: var(--primary-color);
 }
-
+body:has(#dark:checked) {
+  background: black;
+  color: white;
+}
 /* ===== Responsive Design ===== */
 @media (max-width: 992px) {
   .hero .container {
@@ -468,6 +471,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
