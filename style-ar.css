@@ -233,7 +233,7 @@ img {
 .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/Airflow-Control.webp") center/cover fixed;
+    url("img/Airflow-Control.webp") center/cover fixed;
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -464,4 +464,5 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
