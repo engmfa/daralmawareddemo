@@ -454,9 +454,7 @@ img {
 }
 .about-btn {
   margin-bottom: 30px;
-  margin-right: 180px;
-  
-  
+  /* margin-right: 180px; */
 }
 body:has(#dark:checked) {
   background: var(--background-color);
@@ -510,6 +508,7 @@ body:has(#dark:checked) {
   }
   .about-us .container {
     flex-direction: column;
+    text-align: center;
   }
 }
 
