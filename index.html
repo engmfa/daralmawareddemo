@@ -8,17 +8,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-	<link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css.normalize.css" />
     <link rel="stylesheet" href="css/style-ar.css" />
   </head>
   <body>
-	  <div class="dev">
+    <div class="dev">
       <strong>تنويه مهم:</strong> الموقع قيد التطوير حالياً، لذلك قد تواجه بعض
       المشاكل التقنية. ارحب باقتراحاتكم واستفساراتكم من خلال
       <a class="alert-link" href="https://wa.me/966551692070" target="_blank"
         >اتصل بنا</a
       >
     </div>
+
     <header class="site-header">
       <div class="container">
         <a href="index.html" class="logo">
@@ -44,6 +45,9 @@
 
         <div class="dark-mode">
           <label class="theme-switch">
+            <div class="dark-text">
+              سيتم تفعيل الوضع الليلي بشكل تلقائي حسب إعدادات النظام التشغيل
+            </div>
             <input type="checkbox" aria-label="الوضع الليلي" id="dark" />
             <span class="slider">
               <span class="toggle-icon">
@@ -210,11 +214,42 @@
           </div>
         </div>
       </section>
+      <!--About us-->
+      <section class="about-us" id="about-us">
+        <h2 class="section-title">قصّتنا</h2>
+        <div class="container">
+          <div class="about-section">
+            <h3 class="">رحلة قائمة على الثقة والجودة</h3>
+            <p class="section-desc">
+              تأسست
+              <strong style="font-size: 24px; color: #61ce70" ;
+                >دار الموارد</strong
+              >
+              على يد مجموعة من المهندسين والخبراء الطموحين، بإيمان راسخ بأن
+              مشاريع التطوير المتسارعة في المملكة العربية السعودية تستحق أعلى
+              معايير الجودة العالمية. انطلقت رحلتنا سنة 1995 ومنذ ذلك الحين ,
+              ونحن نضع معايير التميز في أنظمة الهندسة الميكانيكية والكهربائية
+              والسباكة (MEP) وفي مجال ستائر الهواء.
+            </p>
+            <p class="section-desc">
+              من مشروع صغير إلى شريك موثوق لعشرات الشركات الرائدة، نما حجم
+              شركتنا وتطورت، لكن مبادئنا ظلت راسخة كالجبال: الالتزام بالجودة،
+              والشفافية التامة مع العملاء، والسعي الدؤوب وراء أحدث الحلول
+              الهندسية.
+            </p>
+            <button class="product-btn about-btn">اكتشف قصتنا ورسالتنا</button>
+          </div>
+          <div class="about-img">
+            <img
+              src="img/Daralmawared-Logo.webp"
+              alt="Dar AlMawared Logo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/script.js"></script>
   </body>
 </html>
-
-
-
