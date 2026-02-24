@@ -48,6 +48,9 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+section {
+  scroll-margin-top: 80px;
+}
 
 ul {
   list-style: none;
@@ -75,7 +78,7 @@ img {
   background: var(--header-bg);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   border-bottom: 3px solid var(--dark-bg);
 }
 
@@ -403,7 +406,8 @@ img {
   height: 100%;
 }
 
-.cards-grid:has(.card:hover) .card:not(:hover) {
+.cards-grid:has(.card:hover) .card:not(:hover),
+.statistics .container:has(.stat:hover) .stat:not(:hover) {
   opacity: 0.5;
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 10px 25px rgba(1, 124, 112, 0.2);
@@ -460,6 +464,37 @@ body:has(#dark:checked) {
   background: var(--background-color);
   color: var(--text-color);
 }
+/* Start Statistics Section */
+.statistics {
+  background: url("../img/state.webp") center/cover no-repeat fixed;
+  position: relative;
+}
+.stat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0.144);
+}
+.statistics .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.stat:hover {
+  scale: 1.1;
+  background-color: white;
+}
+.stat h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.stat span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+/* End Statistics Section */
 /* ===== Responsive Design ===== */
 @media (max-width: 992px) {
   .hero .container {
