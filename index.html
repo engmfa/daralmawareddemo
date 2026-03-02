@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css.normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style-ar.css" />
   </head>
   <body>
@@ -35,15 +35,24 @@
           <ul class="nav-list">
             <li><a href="index.html" class="active">الرئيسية</a></li>
             <li><a href="#about-us">من نحن</a></li>
-            <li><a href="#products">المنتجات</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="#products">المنتـجات</a></li>
+            <li><a href="#services">خدمـاتـنا</a></li>
+            <li><a href="contact.html">اتصـل بنـا</a></li>
           </ul>
         </nav>
 
         <button class="cta-btn">استشارتك مجانية</button>
 
-        <div class="dark-mode">
+        <!-- هذا القسم للعرض فقط - يعمل تلقائياً بدون تفاعل -->
+        <div class="dark-mode-indicator">
+          <div class="theme-indicator">
+            <span class="toggle-icon">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+            </span>
+          </div>
+        </div>
+        <!-- <div class="dark-mode">
           <label class="theme-switch">
             <div class="dark-text">
               سيتم تفعيل الوضع الليلي بشكل تلقائي حسب إعدادات النظام التشغيل
@@ -56,7 +65,7 @@
               </span>
             </span>
           </label>
-        </div>
+        </div> -->
 
         <div class="social-icons">
           <a href="#" aria-label="فيسبوك"
@@ -91,7 +100,16 @@
               والسباكة المتكاملة، المصممة خصيصًا لتلبية متطلبات المناخ والسلامة
               في المملكة.
             </p>
-            <button class="product-btn">استكشف منتجاتنا</button>
+            <button
+              class="product-btn"
+              onclick="
+                document
+                  .getElementById('prod-items')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              استكشف منتجاتنا
+            </button>
           </div>
 
           <div class="hero-media">
@@ -214,17 +232,16 @@
           </div>
         </div>
       </section>
+
       <!--About us-->
       <section class="about-us" id="about-us">
         <h2 class="section-title">قصّتنا</h2>
         <div class="container">
           <div class="about-section">
-            <h3 class="">رحلة قائمة على الثقة والجودة</h3>
+            <h3>رحلة قائمة على الثقة والجودة</h3>
             <p class="section-desc">
               تأسست
-              <strong style="font-size: 24px; color: #61ce70" ;
-                >دار الموارد</strong
-              >
+              <strong>دار الموارد</strong>
               على يد مجموعة من المهندسين والخبراء الطموحين، بإيمان راسخ بأن
               مشاريع التطوير المتسارعة في المملكة العربية السعودية تستحق أعلى
               معايير الجودة العالمية. انطلقت رحلتنا سنة 1995 ومنذ ذلك الحين ,
@@ -248,6 +265,7 @@
           </div>
         </div>
       </section>
+
       <!--Start Statistics Section-->
       <section class="statistics" id="statistics">
         <div class="stat-overlay"></div>
@@ -271,6 +289,7 @@
           </div>
         </div>
       </section>
+
       <!--Start Products-Categories Section-->
       <section class="prod-items" id="prod-items">
         <h2 class="section-title">استكشف فئات منتجاتنا</h2>
@@ -667,6 +686,149 @@
         </div>
       </section>
       <!--End Products-Categories Section-->
+      <!-- Start Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="section-title">أعمالنا</h2>
+        <p class="section-desc">كل ما تم انجاه وصنعه بإتقان</p>
+        <div class="container">
+          <div class="portfolio-container cards-grid">
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="img/Products/كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية؟.webp"
+                alt="Dallah-Hospital"
+              />
+              <div class="box-info">
+                <h3>
+                  كيف-ساهمت-ستائر-الهواء-في-تحسين-بيئة-مستشفى-دلة-في-السعودية
+                </h3>
+                <p>
+                  يقدم مستشفى دلة السعودي الرعاية الطبية للمرضى من خلال طاقم طبي
+                  متخصص وأجهزة طبية تشكل جزءاً حيوياً من الخدمات الصحية.
+                </p>
+                <button class="item-details">تفاصيل العمل</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+      <!-- Start Team Section -->
+      <section class="team" id="team">
+        <div class="container"></div>
+      </section>
+      <!-- End Team Section -->
     </main>
 
     <script src="js/script.js"></script>
