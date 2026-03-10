@@ -1099,24 +1099,25 @@ footer .container {
   gap: 15px;
 }
 
-footer .container h2,
-footer .container ul {
+footer .container .section h2,
+footer .container .section ul {
   color: var(--accent-color);
   margin-bottom: 15px;
 }
-footer .container ul li {
+footer .container .section ul li {
   line-height: 2.3;
   transition: var(--transition);
   font-family: var(--font-secondary);
 }
-footer .container ul li:hover {
+footer .container .section ul li:hover {
   color: var(--accent-color);
   transform: scale(1.2);
 }
-footer .container p {
+footer .container .section p {
   font-size: 0.9rem;
   color: var(--white);
   font-family: var(--font-secondary);
+  margin-bottom: 15px;
 }
 footer .container .section a {
   position: relative;
