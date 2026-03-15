@@ -655,9 +655,13 @@ img {
 /* Start Products items */
 
 .prod-items {
-  padding: 40px 0;
+  padding: 85px 0;
 }
-
+.all-prod-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 100px;
+}
 .item {
   cursor: pointer;
   position: relative;
@@ -707,7 +711,8 @@ img {
 
 .item-content {
   position: absolute; /* جعل المحتوى منبثق فوق البطاقة */
-  top: 100%; /* يظهر أسفل البطاقة مباشرة */
+  /*top: -18px;  يظهر أسفل البطاقة مباشرة */
+  bottom: -75px; /* يظهر فوق البطاقة مباشرة */
   left: 0;
   right: 0;
   background: var(--card-bg);
